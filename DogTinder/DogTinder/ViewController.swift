@@ -1,5 +1,4 @@
 import UIKit
-import <Parse/Parse.h> 
 
 class ViewController: UIViewController {
     

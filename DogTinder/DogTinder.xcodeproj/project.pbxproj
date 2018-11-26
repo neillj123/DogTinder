@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AEBC2FB21AC3AF00073B13A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEBC2FA21AC3AF00073B13A /* GoogleService-Info.plist */; };
 		90BEE6979837F77EEA31DA8B /* Pods_DogTinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F005C2DA7C126753C32D9E18 /* Pods_DogTinder.framework */; };
 		F74EE0D521A4148800C3D47E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EE0D421A4148800C3D47E /* AppDelegate.swift */; };
 		F74EE0D721A4148800C3D47E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EE0D621A4148800C3D47E /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		3FE7A50826B6DD90E0197CC8 /* Pods-DogTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogTinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogTinder/Pods-DogTinder.debug.xcconfig"; sourceTree = "<group>"; };
 		5EB4BCF2E3E71DD20D504F98 /* Pods-DogTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogTinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogTinder/Pods-DogTinder.release.xcconfig"; sourceTree = "<group>"; };
+		8AEBC2FA21AC3AF00073B13A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F005C2DA7C126753C32D9E18 /* Pods_DogTinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogTinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74EE0D121A4148800C3D47E /* DogTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74EE0D421A4148800C3D47E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				F74EE0D821A4148800C3D47E /* Main.storyboard */,
 				F74EE0DB21A4148800C3D47E /* Assets.xcassets */,
 				F74EE0DD21A4148800C3D47E /* LaunchScreen.storyboard */,
+				8AEBC2FA21AC3AF00073B13A /* GoogleService-Info.plist */,
 				F74EE0E021A4148800C3D47E /* Info.plist */,
 			);
 			path = DogTinder;
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74EE0DF21A4148800C3D47E /* LaunchScreen.storyboard in Resources */,
+				8AEBC2FB21AC3AF00073B13A /* GoogleService-Info.plist in Resources */,
 				F74EE0DC21A4148800C3D47E /* Assets.xcassets in Resources */,
 				F74EE0DA21A4148800C3D47E /* Main.storyboard in Resources */,
 			);
