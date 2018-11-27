@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Os-E0W">
-                                <rect key="frame" x="106" y="180" width="240" height="128"/>
+                                <rect key="frame" x="67" y="108" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -33,23 +33,54 @@
         <!--View Controller-->
         <scene sceneID="vM6-bS-072">
             <objects>
-                <viewController id="kBV-oA-H9a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Proflie1" id="kBV-oA-H9a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hvy-1h-lCF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-ou-XcZ">
-                                <rect key="frame" x="36" y="181" width="297" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dog Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omN-ho-2PE">
+                                <rect key="frame" x="147" y="533" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-JZ-dom">
+                                <rect key="frame" x="153" y="562" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-ou-XcZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="503"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rjD-Hq-fzI" appends="YES" id="lZp-pT-hmp"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbd-ou-XcZ" firstAttribute="leading" secondItem="Hvy-1h-lCF" secondAttribute="leading" id="8Ka-Dt-uWz"/>
+                            <constraint firstItem="omN-ho-2PE" firstAttribute="top" secondItem="dbd-ou-XcZ" secondAttribute="bottom" constant="30" id="CP9-gW-BiB"/>
+                            <constraint firstItem="jdw-JZ-dom" firstAttribute="centerX" secondItem="Hvy-1h-lCF" secondAttribute="centerX" id="Gdg-wN-RdZ"/>
+                            <constraint firstItem="omN-ho-2PE" firstAttribute="centerX" secondItem="Hvy-1h-lCF" secondAttribute="centerX" id="LE2-pF-mfJ"/>
+                            <constraint firstItem="jdw-JZ-dom" firstAttribute="centerX" secondItem="dbd-ou-XcZ" secondAttribute="centerX" id="XJo-pZ-FPb"/>
+                            <constraint firstItem="9Np-xn-oRY" firstAttribute="bottom" secondItem="jdw-JZ-dom" secondAttribute="bottom" constant="84" id="cFz-8N-7A9"/>
+                            <constraint firstItem="dbd-ou-XcZ" firstAttribute="top" secondItem="Hvy-1h-lCF" secondAttribute="top" id="dlG-Il-QsW"/>
+                            <constraint firstItem="omN-ho-2PE" firstAttribute="centerX" secondItem="dbd-ou-XcZ" secondAttribute="centerX" id="ewT-rv-lcp"/>
+                            <constraint firstItem="jdw-JZ-dom" firstAttribute="top" secondItem="omN-ho-2PE" secondAttribute="bottom" constant="8" symbolic="YES" id="veQ-sM-LTI"/>
+                            <constraint firstItem="jdw-JZ-dom" firstAttribute="leading" secondItem="9Np-xn-oRY" secondAttribute="leading" constant="153" id="zCs-n5-HST"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9Np-xn-oRY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfw-fF-yx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI"/>
             </objects>
-            <point key="canvasLocation" x="1367" y="36"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dog1" width="112" height="112"/>
+    </resources>
 </document>
