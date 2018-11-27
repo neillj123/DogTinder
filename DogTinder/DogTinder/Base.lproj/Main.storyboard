@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Os-E0W">
-                                <rect key="frame" x="67" y="108" width="240" height="128"/>
+                                <rect key="frame" x="67" y="92" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -59,6 +59,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="dbd-ou-XcZ" firstAttribute="leading" secondItem="Hvy-1h-lCF" secondAttribute="leading" id="8Ka-Dt-uWz"/>
                             <constraint firstItem="omN-ho-2PE" firstAttribute="top" secondItem="dbd-ou-XcZ" secondAttribute="bottom" constant="30" id="CP9-gW-BiB"/>
@@ -72,12 +73,72 @@
                             <constraint firstItem="jdw-JZ-dom" firstAttribute="leading" secondItem="9Np-xn-oRY" secondAttribute="leading" constant="153" id="zCs-n5-HST"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9Np-xn-oRY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ujd-Hg-oMP" appends="YES" id="BEF-rK-5re"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfw-fF-yx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI"/>
+                <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI">
+                    <connections>
+                        <segue destination="uHU-mS-P5g" kind="popoverPresentation" id="jqJ-Cb-k5n">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="ujd-Hg-oMP"/>
             </objects>
-            <point key="canvasLocation" x="1365.5999999999999" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1430" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I8P-Gv-v1J">
+            <objects>
+                <viewController id="uHU-mS-P5g" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Db2-3W-Lbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog1" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-W9-6qf">
+                                <rect key="frame" x="67" y="155" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfV-u4-Hvr">
+                                <rect key="frame" x="145" y="318" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="It's a match!"/>
+                                <connections>
+                                    <segue destination="pVM-G8-tdP" kind="show" id="23j-SD-zzH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v2Z-vA-WFA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58n-l6-lfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2206" y="-358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AQb-PW-J95">
+            <objects>
+                <viewController id="pVM-G8-tdP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HM5-4Z-UnI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZCd-dm-sAn">
+                                <rect key="frame" x="176" y="315" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fN1-Oc-zR2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3G7-mA-AsX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2205.5999999999999" y="393.55322338830587"/>
         </scene>
     </scenes>
     <resources>

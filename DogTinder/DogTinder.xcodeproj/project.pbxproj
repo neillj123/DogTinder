@@ -120,6 +120,10 @@
 		F74EE0C921A4148800C3D47E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					LeftSwipe,
+					Rightswipe,
+				);
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Joshua Neill (s5008067)";
