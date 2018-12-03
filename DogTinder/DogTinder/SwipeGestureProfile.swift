@@ -7,21 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
 class SwipeGestureProfile: UIViewController {
 
-func addGestureRecognizer_(_gestureRecognizer: UIGestureRecognizer)
-
-@IBAction func swipeHandler(_ gestureRecognizer : UISwipeGestureRecognizer) {
-    if gestureRecognizer.state == .ended {
-        // Perform action.
-    }
+    override func viewDidLoad() {
+        <#code#>super.viewDidLoad()
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
 }
-
-var isUserInteractionEnabled: Bool { get set }
-    var numberOfTouchesRequired: Int = 0 { get set }
-var direction: UISwipeGestureRecognizer.Direction { get set }
-
-}
-
-
-

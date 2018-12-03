@@ -50,11 +50,18 @@
                                 <rect key="frame" x="168" y="311" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="w6M-Lp-OdP" eventType="touchUpInside" id="rpg-dy-npM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sil-pP-hD6"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="cGN-dM-dI8" id="dex-8B-XqC"/>
+                        <outlet property="passwordTextField" destination="OeJ-lX-Ozl" id="ME0-6o-n8P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p43-qi-hxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,13 +116,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfw-fF-yx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI">
-                    <connections>
-                        <segue destination="uHU-mS-P5g" kind="popoverPresentation" id="jqJ-Cb-k5n">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI"/>
                 <swipeGestureRecognizer direction="left" id="ujd-Hg-oMP"/>
             </objects>
             <point key="canvasLocation" x="1430" y="36"/>
