@@ -67,6 +67,7 @@
             </objects>
             <point key="canvasLocation" x="292" y="35.532233883058474"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="J8g-cY-Phv">
             <objects>
@@ -89,9 +90,12 @@
             <point key="canvasLocation" x="920.79999999999995" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
+=======
+        <!--Swipe Gesture Profile-->
+>>>>>>> a7fe9c960d275ae3eb70a8d9f79c90fdb7de12c4
         <scene sceneID="vM6-bS-072">
             <objects>
-                <viewController storyboardIdentifier="Proflie1" id="kBV-oA-H9a" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Proflie1" id="kBV-oA-H9a" customClass="SwipeGestureProfile" customModule="DogTinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hvy-1h-lCF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

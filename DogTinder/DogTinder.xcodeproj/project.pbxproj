@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5993A9D521B56ACD00E2A4B7 /* SwipeGestureProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993A9D421B56ACD00E2A4B7 /* SwipeGestureProfile.swift */; };
 		8A39D2DF21B5637700805F96 /* AppContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39D2DE21B5637700805F96 /* AppContainerViewController.swift */; };
 		8A39D2E121B564AD00805F96 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39D2E021B564AD00805F96 /* LoginViewController.swift */; };
 		8A39D2E321B56A7600805F96 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39D2E221B56A7600805F96 /* AppManager.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3FE7A50826B6DD90E0197CC8 /* Pods-DogTinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogTinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogTinder/Pods-DogTinder.debug.xcconfig"; sourceTree = "<group>"; };
+		5993A9D421B56ACD00E2A4B7 /* SwipeGestureProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGestureProfile.swift; sourceTree = "<group>"; };
 		5EB4BCF2E3E71DD20D504F98 /* Pods-DogTinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogTinder.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogTinder/Pods-DogTinder.release.xcconfig"; sourceTree = "<group>"; };
 		8A39D2DE21B5637700805F96 /* AppContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerViewController.swift; sourceTree = "<group>"; };
 		8A39D2E021B564AD00805F96 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,15 @@
 			children = (
 				8A39D2E021B564AD00805F96 /* LoginViewController.swift */,
 				F74EE0D421A4148800C3D47E /* AppDelegate.swift */,
+<<<<<<< HEAD
+=======
+				F74EE0D621A4148800C3D47E /* ViewController.swift */,
+<<<<<<< HEAD
+				5993A9D421B56ACD00E2A4B7 /* SwipeGestureProfile.swift */,
+=======
+				8A39D2E221B56A7600805F96 /* AppManager.swift */,
+>>>>>>> 00f18cb6f47723381c255b70c2db2a945876f689
+>>>>>>> a7fe9c960d275ae3eb70a8d9f79c90fdb7de12c4
 				F74EE0D821A4148800C3D47E /* Main.storyboard */,
 				8A39D2DE21B5637700805F96 /* AppContainerViewController.swift */,
 				F74EE0D621A4148800C3D47E /* ViewController.swift */,
@@ -266,6 +277,7 @@
 				8A39D2E321B56A7600805F96 /* AppManager.swift in Sources */,
 				F74EE0D721A4148800C3D47E /* ViewController.swift in Sources */,
 				F74EE0D521A4148800C3D47E /* AppDelegate.swift in Sources */,
+				5993A9D521B56ACD00E2A4B7 /* SwipeGestureProfile.swift in Sources */,
 				8A39D2DF21B5637700805F96 /* AppContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
