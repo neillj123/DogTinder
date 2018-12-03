@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--App Container View Controller-->
         <scene sceneID="Fam-lg-cRp">
             <objects>
-                <viewController id="wx2-Pe-sZI" sceneMemberID="viewController">
+                <viewController id="wx2-Pe-sZI" customClass="AppContainerViewController" customModule="DogTinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="MainViewController" id="1gp-VU-lIu" customClass="AppContainerViewController" customModule="DogTinder" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,14 +32,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-dM-dI8">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@me.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-dM-dI8">
                                 <rect key="frame" x="73" y="193" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OeJ-lX-Ozl">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="budmd2018" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OeJ-lX-Ozl">
                                 <rect key="frame" x="73" y="245" width="229" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -66,6 +66,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p43-qi-hxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="292" y="35.532233883058474"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J8g-cY-Phv">
+            <objects>
+                <viewController id="zpI-di-rqd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hk-wO-Y5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bulldog1" translatesAutoresizingMaskIntoConstraints="NO" id="GAz-pn-Oyx">
+                                <rect key="frame" x="67" y="155" width="240" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="coL-KF-1Yg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdE-Px-Yn9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="35.532233883058474"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vM6-bS-072">
@@ -119,7 +140,7 @@
                 <swipeGestureRecognizer direction="right" id="rjD-Hq-fzI"/>
                 <swipeGestureRecognizer direction="left" id="ujd-Hg-oMP"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="36"/>
+            <point key="canvasLocation" x="1569" y="36"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I8P-Gv-v1J">
@@ -173,6 +194,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bulldog1" width="205" height="245"/>
         <image name="dog1" width="112" height="112"/>
     </resources>
 </document>

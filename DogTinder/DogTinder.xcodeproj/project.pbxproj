@@ -88,10 +88,10 @@
 			children = (
 				8A39D2E021B564AD00805F96 /* LoginViewController.swift */,
 				F74EE0D421A4148800C3D47E /* AppDelegate.swift */,
-				F74EE0D621A4148800C3D47E /* ViewController.swift */,
-				8A39D2E221B56A7600805F96 /* AppManager.swift */,
 				F74EE0D821A4148800C3D47E /* Main.storyboard */,
 				8A39D2DE21B5637700805F96 /* AppContainerViewController.swift */,
+				F74EE0D621A4148800C3D47E /* ViewController.swift */,
+				8A39D2E221B56A7600805F96 /* AppManager.swift */,
 				F74EE0DB21A4148800C3D47E /* Assets.xcassets */,
 				F74EE0DD21A4148800C3D47E /* LaunchScreen.storyboard */,
 				8AEBC2FA21AC3AF00073B13A /* GoogleService-Info.plist */,
